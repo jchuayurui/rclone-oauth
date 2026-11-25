@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>rclone-oauth</title>
+  <meta name="description" content="rclone-oauth: a personal Google OAuth client that lets rclone back up its owner's files to their own Google Drive.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>rclone-oauth</h1>
+  <p class="lede">A personal Google OAuth client for <a href="https://rclone.org/">rclone</a>.</p>
+
+  <p>rclone-oauth is the Google sign-in identity of one person's own copy of rclone, the open-source file sync tool.
+    Its owner uses it to back up files from their own computer to their own Google Drive, and to read those files
+    back. It is not a service, it is not offered to the public, and it has no users besides its owner.</p>
+
+  <p>When the owner authorizes it, rclone uses the Google Drive API to list, upload, download, check and delete files
+    in the owner's Drive, and only when the owner's own commands or scheduled jobs ask it to. The sign-in token stays
+    in rclone's configuration file on the owner's computer. No server receives it, and no data goes anywhere except
+    between that computer and that Drive.</p>
+
+  <p>Read the <a href="privacy.html">privacy policy</a>.</p>
+
+  <footer>
+    rclone-oauth is not affiliated with rclone or Google.
+    Source of this site: <a href="https://github.com/jchuayurui/rclone-oauth">github.com/jchuayurui/rclone-oauth</a>.
+  </footer>
+</main>
+</body>
+</html>
